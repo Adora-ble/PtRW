@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="If=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1</title>
+</head>
+<body>
+    <h1>Проектування та розробка веб-застосунків</h1>
+    <h2>Лабораторна робота №1</h2>
+    <h2>Виконав студент групи КН-32 Буяло Назар</h2>
+    <a href="Lab1.html">На головну</a>
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для введення товару до інтернет-магазину. Необхідно заповнити  наступні данні:
+       <br> •	дані про товар, включають назву товару, тип товару(вибирається зі списку), опис, поточну ціну, ціну зі знижкою;
+       <br> •	дані про виробника, включають назву,  електрону пошту, посилання на веб-сайт, коментарі.
+        </p>
+<form action="1" method="POST">
+    <fieldset>
+        <legend>
+            Товар
+        </legend>
+        <label>
+            Назва
+            <input id="name" type = "text">
+        </label> <br> <br><br>
+        <label> Тип 
+            <select>
+                <option> Техніка </option>
+                <option> Для дому</option>
+                <option> Продукти</option>
+                <option> Для дітей</option>
+            </select>
+        </label>
+        <label>
+            Опис
+            <input id="description" type = "text">
+        </label> <br> <br>
+        <label>
+            Поточна ціна
+            <input id="price" type = "number" min="1">
+        </label>
+        <label>
+            Ціна зі знижкою
+            <input id="saleprice" type = "number" min="0">
+        </label>
+    </fieldset>
+    
+    <fieldset>
+        <legend>
+          Виробник
+        </legend>
+        <label>
+          Назва
+          <input id = "name1" type="text">
+        </label>
+        <label> <br><br><br>
+          Електронна пошта
+          <input id="e-mail" type="email">
+        </label>
+        <label>
+          Посилання на веб-сайт
+          <input id="url" type="url">
+        </label><br>
+        <label> <br>
+          Коментарі
+          <input id = "comment" type="text">
+        </label>
+      </fieldset>
+      <button type="submit">Відправити</button>
+</form>
+    </body>
+</html>
